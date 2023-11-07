@@ -1,9 +1,10 @@
 package recruiterManagement;
 
 public enum Specialisation {
-    IT_RECRUITER("IT recruiterManagement.Recruiter"),
-    HR_RECRUITER("HR recruiterManagement.Recruiter"),
-    SALES_RECRUITER("Sales recruiterManagement.Recruiter");
+    //TODO: use in Recruiter specializedIndustries
+    IT_RECRUITER("IT"),
+    MARKETING_RECRUITER("Marketing"),
+    SALES_RECRUITER("Sales");
 
     private String specialisation;
 

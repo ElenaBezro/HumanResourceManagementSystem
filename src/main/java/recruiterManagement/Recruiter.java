@@ -3,21 +3,22 @@ package recruiterManagement;
 
 import applicantManagement.Applicant;
 import applicantManagement.Status;
+import jobPositionManagement.JobPosition;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 public class Recruiter {
     private String name;
     private List<JobPosition> jobPositionsManaged = new ArrayList<>();
+    private Set<String> specializedIndustries;
+    private Set<String> specializedRoles;
 
-    private Set<Specialisation> specialisations;
-
-    public Recruiter(String name, Set<Specialisation> specialisations) {
+    public Recruiter(String name, Set<String> specializedIndustries, Set<String> specializedRoles) {
         this.name = name;
-        this.specialisations = specialisations;
+        this.specializedIndustries = specializedIndustries;
+        this.specializedRoles = specializedRoles;
     }
 
     public void assignJobPosition(JobPosition jobPosition) {
@@ -29,15 +30,8 @@ public class Recruiter {
         applicant.setApplicationStatus(Status.REVIEWED);
     }
     public boolean isSpecializedFor(JobPosition jobPosition) {
-        Map<Specialisation, List<String>> specialisationToJobTitleMap =  SpecialisationToJobTitle.getInstance().getMap();
 
-        for (Specialisation spec: specialisations) {
-            return specialisationToJobTitleMap.get(spec).contains(jobPosition.getTitle());
-        }
-        return false;
+        return specializedIndustries.contains(jobPosition.getIndustry())
+                || specializedRoles.contains(jobPosition.getRole());
     }
-    //: Checks if the recruiter is specialized for a given job position. [Details need to be provided.]
-
-
-
 }
