@@ -36,19 +36,56 @@ public class HRSystem {
         }
     }
 
-    public void generateReports() {
+    public List<JobPosition> getJobPositions() {
+        return jobPositions;
+    }
+
+    public List<Recruiter> getRecruiters() {
+        return recruiters;
+    }
+
+    public List<Applicant> getApplicants() {
+        return applicants;
+    }
+
+    //This method is only for test purposes
+    public String generateReportsInternally() {
+        StringBuilder result = new StringBuilder();
         Map<Status, List<Applicant>> statusToApplicantsMap = applicants
                 .stream()
                 .collect(Collectors.groupingBy(Applicant::getApplicationStatus));
         statusToApplicantsMap.forEach((status, applicants) -> {
-            System.out.println("Status: " + status);
+            result.append("Status: ")
+                    .append(status)
+                    .append('\n');
             for (Applicant applicant: applicants) {
-                System.out.println("---- " + applicant);
+                result.append("---- ")
+                        .append(applicant)
+                        .append('\n');
             }
         });
 
-        //TODO: how to connect Applicant to a JobPosition?
-        //Map<JobPosition, List<Applicant>> jobPositionToApplicantsMap = new HashMap<>();
+        Map<JobPosition, List<Applicant>> jobPositionToApplicantsMap = jobPositions
+                .stream()
+                .collect(Collectors.toMap(jobPosition -> jobPosition,
+                        jobPosition -> jobPosition.getApplicants()));
+
+        jobPositionToApplicantsMap.forEach((jobPosition, applicants) -> {
+            result.append("Job Position: ")
+                    .append(jobPosition.getTitle())
+                    .append('\n');
+            for (Applicant applicant: applicants) {
+                result.append("---- ")
+                        .append(applicant)
+                        .append('\n');
+            }
+        });
+
+        return result.toString();
+    }
+
+    public void generateReports() {
+        System.out.println(generateReportsInternally());
     }
 
 }

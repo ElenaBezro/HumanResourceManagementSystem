@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc17fb69-3cc3-4aea-b46f-aca5678d062b" name="Changes" comment="add jobPosition test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/recruiterManagement/RecruiterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hrSystemOperations/HRSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hrSystemOperations/HRSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hrSystemOperations/HRSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jobPositionManagement/JobPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobPositionManagement/JobPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recruiterManagement/Recruiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recruiterManagement/Recruiter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="hrSystemOperations" />
       <recent name="recruiterManagement" />
       <recent name="jobPositionManagement" />
     </key>

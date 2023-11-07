@@ -21,6 +21,14 @@ public class Recruiter {
         this.specializedRoles = specializedRoles;
     }
 
+    public Recruiter(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public void assignJobPosition(JobPosition jobPosition) {
         jobPositionsManaged.add(jobPosition);
     }

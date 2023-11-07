@@ -15,7 +15,7 @@ public class JobPosition {
     private String location;
     private String industry;
     private String role;
-
+    private List<Applicant> applicants = new ArrayList<>();
 
     public JobPosition(String title, String description, double offeredSalaryRangeStart, double offeredSalaryRangeEnd, List<String> requiredSkills, String location, String industry, String role) {
         this.title = title;
@@ -36,6 +36,14 @@ public class JobPosition {
     public JobPosition(String industry, String role) {
         this.industry = industry;
         this.role = role;
+    }
+
+    public JobPosition(String title) {
+        this.title = title;
+    }
+
+    public List<Applicant> getApplicants() {
+        return applicants;
     }
 
     public String getTitle() {
@@ -63,5 +71,9 @@ public class JobPosition {
             return applicant.getExpectedSalary() < offeredSalaryRangeEnd;
         }
         return false;
+    }
+
+    public void addApplicant(Applicant applicant) {
+        applicants.add(applicant);
     }
 }
