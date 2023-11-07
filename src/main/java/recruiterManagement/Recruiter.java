@@ -32,6 +32,6 @@ public class Recruiter {
     public boolean isSpecializedFor(JobPosition jobPosition) {
 
         return specializedIndustries.contains(jobPosition.getIndustry())
-                || specializedRoles.contains(jobPosition.getRole());
+                && specializedRoles.contains(jobPosition.getRole());
     }
 }

@@ -33,6 +33,11 @@ public class JobPosition {
         this.offeredSalaryRangeEnd = offeredSalaryRangeEnd;
     }
 
+    public JobPosition(String industry, String role) {
+        this.industry = industry;
+        this.role = role;
+    }
+
     public String getTitle() {
         return title;
     }

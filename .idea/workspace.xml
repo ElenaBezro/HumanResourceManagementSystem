@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc17fb69-3cc3-4aea-b46f-aca5678d062b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/jobPositionManagement/JobPositionTest.java" afterDir="false" />
+    <list default="true" id="cc17fb69-3cc3-4aea-b46f-aca5678d062b" name="Changes" comment="add jobPosition test">
       <change afterPath="$PROJECT_DIR$/src/test/java/recruiterManagement/RecruiterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/applicantManagement/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/applicantManagement/Applicant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jobPositionManagement/JobPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobPositionManagement/JobPosition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,19 @@
       <option name="presentableId" value="Default" />
       <updated>1699345525481</updated>
     </task>
+    <task id="LOCAL-00001" summary="add jobPosition test">
+      <option name="closed" value="true" />
+      <created>1699358555480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699358555480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add jobPosition test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jobPosition test" />
   </component>
 </project>
