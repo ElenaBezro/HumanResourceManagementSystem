@@ -20,6 +20,10 @@ public class JobPosition {
         this.location = location;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public boolean isWithinBudget(Applicant applicant) {
         return applicant.getExpectedSalary() < offeredSalaryRangeEnd;
     }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Applicant {
-    private List<String> previousCompanies = new ArrayList<>();
+    private List<String> previousCompanies;
     private String currentCity;
     private  String preferredLocation;
     private  Double expectedSalary;
@@ -20,6 +20,10 @@ public class Applicant {
 
     public Double getExpectedSalary() {
         return expectedSalary;
+    }
+
+    public void setApplicationStatus(Status applicationStatus) {
+        this.applicationStatus = applicationStatus;
     }
 
     public boolean isRelocationPreferred() {
