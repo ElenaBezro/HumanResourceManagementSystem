@@ -18,6 +18,10 @@ public class Applicant {
         this.applicationStatus = applicationStatus;
     }
 
+    public Double getExpectedSalary() {
+        return expectedSalary;
+    }
+
     public boolean isRelocationPreferred() {
         return !currentCity.equalsIgnoreCase(preferredLocation);
     }
