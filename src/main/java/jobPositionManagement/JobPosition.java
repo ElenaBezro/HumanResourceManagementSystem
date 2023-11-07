@@ -39,6 +39,14 @@ public class JobPosition {
         return role;
     }
 
+    public double getOfferedSalaryRangeStart() {
+        return offeredSalaryRangeStart;
+    }
+
+    public double getOfferedSalaryRangeEnd() {
+        return offeredSalaryRangeEnd;
+    }
+
     public boolean isWithinBudget(Applicant applicant) {
         return applicant.getExpectedSalary() < offeredSalaryRangeEnd;
     }

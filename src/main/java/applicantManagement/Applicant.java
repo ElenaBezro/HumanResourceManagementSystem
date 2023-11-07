@@ -26,7 +26,22 @@ public class Applicant {
         this.applicationStatus = applicationStatus;
     }
 
+    public Status getApplicationStatus() {
+        return applicationStatus;
+    }
+
     public boolean isRelocationPreferred() {
         return !currentCity.equalsIgnoreCase(preferredLocation);
+    }
+
+    @Override
+    public String toString() {
+        return "Applicant: "
+                + " previousCompanies=" + previousCompanies
+                + " currentCity=" + currentCity
+                + " preferredLocation=" + preferredLocation
+                + " expectedSalary=" + expectedSalary
+                + " expectedSalary=" + expectedSalary
+                + " applicationStatus=" + applicationStatus;
     }
 }
