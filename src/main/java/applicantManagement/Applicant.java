@@ -18,6 +18,10 @@ public class Applicant {
         this.applicationStatus = applicationStatus;
     }
 
+    public Applicant(Double expectedSalary) {
+        this.expectedSalary = expectedSalary;
+    }
+
     public Double getExpectedSalary() {
         return expectedSalary;
     }

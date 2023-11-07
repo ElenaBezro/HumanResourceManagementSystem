@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc17fb69-3cc3-4aea-b46f-aca5678d062b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hrSystemOperations/HRSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hrSystemOperations/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/jobPositionManagement/JobPositionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/recruiterManagement/RecruiterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/applicantManagement/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/applicantManagement/Applicant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jobPositionManagement/JobPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobPositionManagement/JobPosition.java" afterDir="false" />
     </list>
@@ -21,6 +22,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,12 +45,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "dev",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="recruiterManagement" />
+      <recent name="jobPositionManagement" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

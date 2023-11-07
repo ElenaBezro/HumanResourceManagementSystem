@@ -1,6 +1,7 @@
 package jobPositionManagement;
 
 import applicantManagement.Applicant;
+import hrSystemOperations.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,11 @@ public class JobPosition {
         this.role = role;
     }
 
+    public JobPosition(double offeredSalaryRangeStart, double offeredSalaryRangeEnd) {
+        this.offeredSalaryRangeStart = offeredSalaryRangeStart;
+        this.offeredSalaryRangeEnd = offeredSalaryRangeEnd;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -48,6 +54,9 @@ public class JobPosition {
     }
 
     public boolean isWithinBudget(Applicant applicant) {
-        return applicant.getExpectedSalary() < offeredSalaryRangeEnd;
+        if(Utils.isNotNull(applicant)) {
+            return applicant.getExpectedSalary() < offeredSalaryRangeEnd;
+        }
+        return false;
     }
 }
