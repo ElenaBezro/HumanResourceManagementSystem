@@ -1,0 +1,79 @@
+package jobPositionManagement;
+
+import applicantManagement.Applicant;
+import hrSystemOperations.Utils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JobPosition {
+    private String title;
+    private String description;
+    private double offeredSalaryRangeStart;
+    private double offeredSalaryRangeEnd;
+    private List<String> requiredSkills = new ArrayList<>();
+    private String location;
+    private String industry;
+    private String role;
+    private List<Applicant> applicants = new ArrayList<>();
+
+    public JobPosition(String title, String description, double offeredSalaryRangeStart, double offeredSalaryRangeEnd, List<String> requiredSkills, String location, String industry, String role) {
+        this.title = title;
+        this.description = description;
+        this.offeredSalaryRangeStart = offeredSalaryRangeStart;
+        this.offeredSalaryRangeEnd = offeredSalaryRangeEnd;
+        this.requiredSkills = requiredSkills;
+        this.location = location;
+        this.industry = industry;
+        this.role = role;
+    }
+
+    public JobPosition(double offeredSalaryRangeStart, double offeredSalaryRangeEnd) {
+        this.offeredSalaryRangeStart = offeredSalaryRangeStart;
+        this.offeredSalaryRangeEnd = offeredSalaryRangeEnd;
+    }
+
+    public JobPosition(String industry, String role) {
+        this.industry = industry;
+        this.role = role;
+    }
+
+    public JobPosition(String title) {
+        this.title = title;
+    }
+
+    public List<Applicant> getApplicants() {
+        return applicants;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getIndustry() {
+        return industry;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public double getOfferedSalaryRangeStart() {
+        return offeredSalaryRangeStart;
+    }
+
+    public double getOfferedSalaryRangeEnd() {
+        return offeredSalaryRangeEnd;
+    }
+
+    public boolean isWithinBudget(Applicant applicant) {
+        if(Utils.isNotNull(applicant)) {
+            return applicant.getExpectedSalary() < offeredSalaryRangeEnd;
+        }
+        return false;
+    }
+
+    public void addApplicant(Applicant applicant) {
+        applicants.add(applicant);
+    }
+}
